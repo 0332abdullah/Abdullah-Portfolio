@@ -1,7 +1,7 @@
 import { ServiceItem, PortfolioProject, ProcessStep, Testimonial } from "./types";
 import powerbridgeImg from '../assets/Powerbridge-hero.PNG';
 import techValleyImg from '../assets/TechValley-hero.PNG';
-import tenexImg from '../../assets/Tenex-hero.PNG';
+import tenexImg from '../assets/Tenex-hero.PNG';
 
 export const AGENCY_NAME = "Abdullah Yaqub";
 export const AGENCY_TAGLINE = "High-End Engineering & Digital Growth Engine";
@@ -60,7 +60,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "arranged-by-naz",
     title: "Arranged By Naz",
-    imageUrl: "/assets/arranged-by-naz-standalone-hero.PNG",
+    imageUrl: "../assets/arranged-by-naz-standalone-hero.PNG",
     colorClass: "from-cyan-500 to-blue-600",
     link: "https://sparkly-gumdrop-26e284.netlify.app/"
   },
