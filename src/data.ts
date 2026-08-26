@@ -1,7 +1,7 @@
 import { ServiceItem, PortfolioProject, ProcessStep, Testimonial } from "./types";
 import powerbridgeImg from '../assets/Powerbridge-hero.PNG';
 import techValleyImg from '../assets/TechValley-hero.PNG';
-import tenexImg from '../assets/Tenex-hero.PNG';
+import tenexImg from '../../assets/Tenex-hero.PNG';
 
 export const AGENCY_NAME = "Abdullah Yaqub";
 export const AGENCY_TAGLINE = "High-End Engineering & Digital Growth Engine";
