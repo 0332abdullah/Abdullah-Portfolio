@@ -1,4 +1,7 @@
 import { ServiceItem, PortfolioProject, ProcessStep, Testimonial } from "./types";
+import powerbridgeImg from '../assets/Powerbridge-hero.PNG';
+import techValleyImg from '../assets/TechValley-hero.PNG';
+import tenexImg from '../assets/Tenex-hero.PNG';
 
 export const AGENCY_NAME = "Abdullah Yaqub";
 export const AGENCY_TAGLINE = "High-End Engineering & Digital Growth Engine";
@@ -50,28 +53,28 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "tenex",
     title: "Tenex",
-    imageUrl: "./assets/Tenex-hero.PNG",
+    imageUrl: tenexImg,
     colorClass: "from-orange-600 to-red-600",
     link: "https://www.tenex.co/"
   },
   {
     id: "arranged-by-naz",
     title: "Arranged By Naz",
-    imageUrl: "./assets/arranged-by-naz-standalone-hero.PNG",
+    imageUrl: "/assets/arranged-by-naz-standalone-hero.PNG",
     colorClass: "from-cyan-500 to-blue-600",
     link: "https://sparkly-gumdrop-26e284.netlify.app/"
   },
   {
     id: "TechValley",
     title: "Tech Valley",
-    imageUrl: "./assets/TechValley-hero.PNG",
+    imageUrl: "/assets/TechValley-hero.PNG",
     colorClass: "from-brand to-pink-600",
     link: "https://techvalley.pk/"
   },
   {
     id: "PowerBridge",
     title: "PowerBridge",
-    imageUrl: "./assets/Powerbridge-hero.PNG",
+    imageUrl: "/assets/Powerbridge-hero.PNG",
     colorClass: "from-amber-500 to-orange-500",
     link: "https://sweet-ganache-b5fa59.netlify.app/"
   }
