@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AGENCY_NAME } from "../data";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import logoImage from "../../assets/logo.png";
 
 interface HeaderProps {
   onInquireClick: () => void;
@@ -63,8 +64,8 @@ export default function Header({ onInquireClick }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group z-50" id="header-logo-lnk">
-          <div className="w-8 h-8 rounded-lg bg-brand flex items-center justify-center border border-brand-dim shadow-lg shadow-brand/20 group-hover:rotate-12 transition-transform duration-300">
-            <span className="text-white font-display font-semibold text-lg">AY</span>
+          <div className="w-8 h-8 rounded-lg flex items-center justify-center shadow-lg shadow-brand/20 group-hover:rotate-12 transition-transform duration-300">
+            <img src={logoImage} alt="Abdullah Yaqub logo" className="w-full h-full object-contain rounded-lg" />
           </div>
           <span className="text-white font-display font-bold tracking-widest text-lg group-hover:text-brand transition-colors">
             {AGENCY_NAME}

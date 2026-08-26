@@ -1,5 +1,6 @@
 import { AGENCY_NAME } from "../data";
 import { Mail, MapPin } from "lucide-react";
+import logoImage from "../../assets/logo.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,6 +11,13 @@ export default function Footer() {
       <div className="absolute bottom-0 right-[20%] w-[15vw] h-[15vw] bg-brand/5 rounded-full blur-[70px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center justify-center gap-8 text-center">
+        <a href="#" className="flex items-center gap-3 group" aria-label="Back to top">
+          <img src={logoImage} alt="Abdullah Yaqub logo" className="w-12 h-12 object-contain rounded-xl border border-brand/30 shadow-lg shadow-brand/10 group-hover:scale-105 transition-transform" />
+          <span className="text-white font-display font-bold tracking-widest text-lg group-hover:text-brand transition-colors">
+            {AGENCY_NAME}
+          </span>
+        </a>
+
         {/* Direct channels */}
         <div className="w-full max-w-2xl mx-auto">
           <div className="flex flex-wrap items-center justify-center gap-3">
