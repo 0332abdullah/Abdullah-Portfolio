@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import { PROCESS_STEPS } from "../data";
 import { Eye, Layers, Code2, Rocket, ArrowRight } from "lucide-react";
 
@@ -18,7 +18,7 @@ const getProcessIcon = (iconName: string) => {
 };
 
 export default function Process() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: {},
     visible: {
       transition: {
@@ -27,7 +27,7 @@ export default function Process() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,

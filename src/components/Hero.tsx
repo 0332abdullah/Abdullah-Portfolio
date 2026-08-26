@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import { ArrowDown } from "lucide-react";
 import { AGENCY_TAGLINE, SYSTEM_STATS } from "../data";
 import FlowingCanvas from "./FlowingCanvas";
@@ -9,7 +9,7 @@ interface HeroProps {
 }
 
 export default function Hero({ onInquireClick }: HeroProps) {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -20,7 +20,7 @@ export default function Hero({ onInquireClick }: HeroProps) {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
@@ -29,7 +29,7 @@ export default function Hero({ onInquireClick }: HeroProps) {
     },
   };
 
-  const slowFloat = {
+  const slowFloat: Variants = {
     animate: {
       y: [0, -15, 0],
       rotate: [0, 4, -4, 0],

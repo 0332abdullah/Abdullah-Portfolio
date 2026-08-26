@@ -1,6 +1,7 @@
 import { ServiceItem, PortfolioProject, ProcessStep, Testimonial } from "./types";
 import powerbridgeImg from '../assets/Powerbridge-hero.PNG';
 import techValleyImg from '../assets/TechValley-hero.PNG';
+import arrangedByNazImg from '../assets/arranged-by-naz-standalone-hero.PNG';
 import tenexImg from '../assets/Tenex-hero.PNG';
 
 export const AGENCY_NAME = "Abdullah Yaqub";
@@ -53,6 +54,12 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "tenex",
     title: "Tenex",
+    client: "Tenex",
+    category: "Website Development",
+    tagline: "A high-performance digital experience for Tenex.",
+    description: "A responsive marketing website designed to present Tenex clearly across devices.",
+    metrics: [],
+    techStack: ["React", "TypeScript", "Vite"],
     imageUrl: tenexImg,
     colorClass: "from-orange-600 to-red-600",
     link: "https://www.tenex.co/"
@@ -60,21 +67,39 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "arranged-by-naz",
     title: "Arranged By Naz",
-    imageUrl: "../assets/arranged-by-naz-standalone-hero.PNG",
+    client: "Arranged By Naz",
+    category: "Website Development",
+    tagline: "A polished online presence for a creative brand.",
+    description: "A responsive website focused on presenting the brand and its work with clarity.",
+    metrics: [],
+    techStack: ["React", "TypeScript", "Vite"],
+    imageUrl: arrangedByNazImg,
     colorClass: "from-cyan-500 to-blue-600",
     link: "https://sparkly-gumdrop-26e284.netlify.app/"
   },
   {
     id: "TechValley",
     title: "Tech Valley",
-    imageUrl: "/assets/TechValley-hero.PNG",
+    client: "Tech Valley",
+    category: "Website Development",
+    tagline: "A modern web experience for a technology company.",
+    description: "A responsive company website built to communicate services and capabilities effectively.",
+    metrics: [],
+    techStack: ["React", "TypeScript", "Vite"],
+    imageUrl: techValleyImg,
     colorClass: "from-brand to-pink-600",
     link: "https://techvalley.pk/"
   },
   {
     id: "PowerBridge",
     title: "PowerBridge",
-    imageUrl: "/assets/Powerbridge-hero.PNG",
+    client: "PowerBridge",
+    category: "Website Development",
+    tagline: "A clear digital platform for PowerBridge.",
+    description: "A responsive website that presents PowerBridge services through a focused user experience.",
+    metrics: [],
+    techStack: ["React", "TypeScript", "Vite"],
+    imageUrl: powerbridgeImg,
     colorClass: "from-amber-500 to-orange-500",
     link: "https://sweet-ganache-b5fa59.netlify.app/"
   }

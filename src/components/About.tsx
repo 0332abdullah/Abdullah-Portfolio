@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import profileImage from "../../assets/download.png"; // Ensure the path is correct
+import profileImage from "../../assets/download.png";
 import { Target, Award, Eye } from "lucide-react";
 
 export default function About() {
