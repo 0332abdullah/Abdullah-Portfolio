@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand: #ff4400;
+  --color-brand-dim: #cc3600;
+  --color-brand-glow: rgba(255, 68, 0, 0.15);
+  --color-brand-glow-solid: rgba(255, 68, 0, 0.6);
+  --color-dark-obsidian: #050505;
+  --color-dark-carbon: #0d0d0d;
+  --color-dark-slate: #151515;
+}
+
+/* Custom utilities & animations */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #050505;
+    color: #ffffff;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: #050505;
+  }
+
+  /* Custom high-end scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 68, 0, 0.2);
+    border-radius: 4px;
+    border: 2px solid #050505;
+    transition: background 0.3s ease;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 68, 0, 0.6);
+  }
+
+  /* Selection highlight */
+  ::selection {
+    background-color: #ff4400;
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 68, 0, 0.5), 0 0 40px rgba(255, 68, 0, 0.2);
+  }
+
+  .text-glow-light {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 15px rgba(255, 68, 0, 0.15);
+  }
+
+  .border-glow-hover:hover {
+    box-shadow: 0 0 25px rgba(255, 68, 0, 0.35);
+  }
+
+  .glass-card {
+    background: rgba(13, 13, 13, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-card-accent {
+    background: rgba(255, 68, 0, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 68, 0, 0.1);
+  }
+
+  .tech-chip {
+    background-color: rgba(13, 13, 13, 0.88);
+    contain: layout paint;
+  }
+
+  @media (min-width: 768px) {
+    .tech-chip {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+  }
+
+  .mask-radial {
+    mask-image: radial-gradient(circle at center, black, transparent);
+    -webkit-mask-image: radial-gradient(circle at center, black, transparent);
+  }
+}
+
+/* Continuously running mesh gradient animation */
+@keyframes meshShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.mesh-gradient {
+  background: linear-gradient(-45deg, #050505, #120400, #0a0a0all, #1a1a1a, #050505);
+  background-size: 400% 400%;
+  animation: meshShift 15s ease infinite;
+}
+
+/* Subtle pulse glow for CTA core branding */
+@keyframes breathingGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 68, 0, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 68, 0, 0.7);
+    transform: scale(1.02);
+  }
+}
+
+.pulse-glow {
+  animation: breathingGlow 3s ease-in-out infinite;
+}
+
