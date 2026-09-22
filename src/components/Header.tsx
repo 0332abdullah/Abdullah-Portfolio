@@ -54,12 +54,6 @@ export default function Header({ onInquireClick }: HeaderProps) {
           : "py-6 bg-transparent"
       }`}
     >
-      {/* Scroll Progress Bar */}
-      <div
-        className="absolute top-0 left-0 h-[2px] bg-brand transition-all duration-100 ease-out z-50"
-        style={{ width: `${scrollProgress}%` }}
-        id="scroll-marker"
-      />
 
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}

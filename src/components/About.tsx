@@ -58,7 +58,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
            <div className="lg:col-span-6 space-y-8" id="about-team-spotlights">
 <motion.p
-            className="mt-6 text-white text-sm sm:text-xl font-light leading-relaxed"
+            className="mt-6 text-white text-md sm:text-xl font-light leading-relaxed"
           >I'm a Certified Software Engineer who helps businesses build modern, high-performing websites and applications from concept to deployment.
 </motion.p>
 <motion.p

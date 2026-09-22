@@ -94,7 +94,7 @@ export default function Contact({ initialService = "" }: ContactProps) {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-white tracking-tight uppercase leading-[1.1]">
-              Contact Us
+              Contact
             </h2>
             <p className="mt-4 text-white/50 text-sm font-light max-w-xl mx-auto">
               Share your project vision, and I will provide a detailed breakdown of the development and design approach, along with a clear timeline and budget estimate.

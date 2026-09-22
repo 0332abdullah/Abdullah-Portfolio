@@ -185,6 +185,6 @@ export const TEAM_MEMBERS = [
 
 export const SYSTEM_STATS = [
   { label: "Years of Experience", value: "3+" },
-  { label: "SClient Satisfaction", value: "100%" },
+  { label: "Client Satisfaction", value: "100%" },
   { label: "Performance Rating", value: "99/100" }
 ];
